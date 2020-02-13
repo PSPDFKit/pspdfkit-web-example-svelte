@@ -1,0 +1,31 @@
+{
+  "name": "pspdfkit-svelte",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "SEE LICENSE IN https://pspdfkit.com/legal/License.pdf",
+  "dependencies": {
+    "pspdfkit": "2020.1.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-static-files-copy": "^2.2.1",
+    "parcel-plugin-svelte": "^4.0.4",
+    "svelte": "^3.12.1"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build --no-source-maps src/index.html"
+  },
+  "browserslist": [
+    "last 2 chrome versions"
+  ],
+  "staticFiles": {
+    "staticPath": [
+      "static",
+      {
+        "staticPath": "node_modules/pspdfkit/dist/pspdfkit-lib",
+        "staticOutDir": "pspdfkit-lib"
+      }
+    ]
+  }
+}
