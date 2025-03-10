@@ -1,0 +1,7 @@
+/node_modules/
+/public/build/
+/public/nutrient-viewer.js
+/public/pspdfkit.js
+.DS_Store
+/public/pspdfkit-lib
+/public/nutrient-viewer-lib
